@@ -1,9 +1,3 @@
-import AdminDashboard from './pages/AdminDashboard';
+import AdminDashboard from "./components/dashboard/AdminDashboard";
 
-export default function App() {
-  return (
-    <div className="min-h-screen bg-slate-50">
-      <AdminDashboard />
-    </div>
-  );
-}
+export default () => <AdminDashboard />;

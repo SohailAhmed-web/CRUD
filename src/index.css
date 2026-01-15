@@ -1,25 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
-  color-scheme: light;
+  color-scheme: dark;
+  --color-primary: #3b82f6;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+  --color-info: #06b6d4;
+  --color-bg-primary: #0f172a;
+  --color-bg-secondary: #1e293b;
+  --color-bg-tertiary: #334155;
+  --color-text-primary: #f1f5f9;
+  --color-text-secondary: #cbd5e1;
+  --color-text-tertiary: #94a3b8;
+  --color-border: #475569;
 }
 
 * {
   box-sizing: border-box;
 }
 
-body {
+html, body {
   margin: 0;
+  padding: 0;
   font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
-  background: linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
-  color: #0f172a;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: var(--color-text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
-  color: inherit;
+  color: var(--color-primary);
   text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #60a5fa;
 }
 
 button {
   cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+input, select, textarea {
+  font-family: inherit;
 }
